@@ -15,16 +15,9 @@ function enterPressedCtrl(){
 	if (screenValue.trim().length == 0) {
 		return;
 	}
-	/*this if makes sure that if you hit enter with a blank 
-	text box or only spaces it will not create a new list item*/
 	var historyList = document.querySelector("#history ul");
-	/*this selects every ul under the ID history. you can specify 
-	only the direct children with '>' and you can select by 
-	class with .historyFrame*/
 	var newLi = document.createElement("li");
 	newLi.innerHTML = screenValue;
-	/*escape = if you identify that the text I input is code 
-	(that could be dangerous) then it will convert it to ascii code.*/
 	historyList.appendChild(newLi);
 }
 
@@ -33,17 +26,10 @@ function enterPressed(){
 	if (screenValue.trim().length == 0) {
 		return;
 	}
-	/*this if makes sure that if you hit enter with a blank 
-	text box or only spaces it will not create a new list item*/
 	document.getElementById("screen").value = ''
 	var historyList = document.querySelector("#history ul");
-	/*this selects every ul under the ID history. you can specify 
-	only the direct children with '>' and you can select by 
-	class with .historyFrame*/
 	var newLi = document.createElement("li");
 	newLi.innerHTML = screenValue;
-	/*escape = if you identify that the text I input is code 
-	(that could be dangerous) then it will convert it to ascii code.*/
 	historyList.appendChild(newLi);
 }
 
