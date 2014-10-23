@@ -1,0 +1,77 @@
+<html>
+    <head>
+    	<title>Onscreen Keyboard</title>
+    	<link rel="stylesheet" href="css/keyboard.css" />
+        <script src="js/keyboard.js"></script>   
+    </head>
+    
+    <body>
+	
+	<div id="container">
+		<!--put your keyboard and screen here-->
+		<input type="text" id="screen" onkeydown="handleKeyPress(event)" />
+
+		<ul id="keyboard">
+        <li onclick="clicked('`')" class="symbol"><span class="off">`</span><span class="on">~</span></li>
+        <li onclick="clicked('1')" class="symbol"><span class="off">1</span><span class="on">!</span></li>
+        <li onclick="clicked('2')" class="symbol"><span class="off">2</span><span class="on">@</span></li>
+        <li onclick="clicked('3')" class="symbol"><span class="off">3</span><span class="on">#</span></li>
+        <li onclick="clicked('4')" class="symbol"><span class="off">4</span><span class="on">$</span></li>
+        <li onclick="clicked('5')" class="symbol"><span class="off">5</span><span class="on">%</span></li>
+        <li onclick="clicked('6')" class="symbol"><span class="off">6</span><span class="on">^</span></li>
+        <li onclick="clicked('7')" class="symbol"><span class="off">7</span><span class="on">&amp;</span></li>
+        <li onclick="clicked('8')" class="symbol"><span class="off">8</span><span class="on">*</span></li>
+        <li onclick="clicked('9')" class="symbol"><span class="off">9</span><span class="on">(</span></li>
+        <li onclick="clicked('0')" class="symbol"><span class="off">0</span><span class="on">)</span></li>
+        <li onclick="clicked('-')" class="symbol"><span class="off">-</span><span class="on">_</span></li>
+        <li onclick="clicked('=')" class="symbol"><span class="off">=</span><span class="on">+</span></li>
+        <li onclick="clicked()" class="delete lastitem">delete</li>
+        <li onclick="clicked('')" class="tab">tab</li>
+        <li onclick="clicked('q')" class="letter">q</li>
+        <li onclick="clicked('w')" class="letter">w</li>
+        <li onclick="clicked('e')" class="letter">e</li>
+        <li onclick="clicked('r')" class="letter">r</li>
+        <li onclick="clicked('t')" class="letter">t</li>
+        <li onclick="clicked('y')" class="letter">y</li>
+        <li onclick="clicked('u')" class="letter">u</li>
+        <li onclick="clicked('i')" class="letter">i</li>
+        <li onclick="clicked('o')" class="letter">o</li>
+        <li onclick="clicked('p')" class="letter">p</li>
+        <li onclick="clicked('[')" class="symbol"><span class="off">[</span><span class="on">{</span></li>
+        <li onclick="clicked(']')" class="symbol"><span class="off">]</span><span class="on">}</span></li>
+        <li onclick="clicked('\')" class="symbol lastitem"><span class="off">\</span><span class="on">|</span></li>
+        <li onclick="clicked('')" class="capslock">caps lock</li>
+        <li onclick="clicked('a')" class="letter">a</li>
+        <li onclick="clicked('s')" class="letter">s</li>
+        <li onclick="clicked('d')" class="letter">d</li>
+        <li onclick="clicked('f')" class="letter">f</li>
+        <li onclick="clicked('g')" class="letter">g</li>
+        <li onclick="clicked('h')" class="letter">h</li>
+        <li onclick="clicked('j')" class="letter">j</li>
+        <li onclick="clicked('k')" class="letter">k</li>
+        <li onclick="clicked('l')" class="letter">l</li>
+        <li onclick="clicked(';')" class="symbol"><span class="off">;</span><span class="on">:</span></li>
+        <li onclick="clicked('')" class="symbol"><span class="off">'</span><span class="on">&quot;</span></li>
+        <li onclick="enterPressed()" class="return lastitem">return</li>
+        <li onclick="clicked('')" class="left-shift">shift</li>
+        <li onclick="clicked('z')" class="letter">z</li>
+        <li onclick="clicked('x')" class="letter">x</li>
+        <li onclick="clicked('c')" class="letter">c</li>
+        <li onclick="clicked('v')" class="letter">v</li>
+        <li onclick="clicked('b')" class="letter">b</li>
+        <li onclick="clicked('n')" class="letter">n</li>
+        <li onclick="clicked('m')" class="letter">m</li>
+        <li onclick="clicked(',')" class="symbol"><span class="off">,</span><span class="on">&lt;</span></li>
+        <li onclick="clicked('.')" class="symbol"><span class="off">.</span><span class="on">&gt;</span></li>
+        <li onclick="clicked('/')" class="symbol"><span class="off">/</span><span class="on">?</span></li>
+        <li onclick="clicked('')" class="right-shift lastitem">shift</li>
+        <li onclick="clicked(' ')" class="space lastitem">_______________</li>
+    </ul>
+		
+    <div class="historyFrame" id="history" style="color:black">
+        <ul></ul>
+    </div>
+	</div>
+	
+    </body>
+</html>    
